@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cabify-challenge"
+    }
+  },
+  "defaultProject": "cabify-challenge",
+  "cli": {
+    "analytics": "9ab4d4a4-75d2-4344-a522-2fa877650318"
+  }
 }
