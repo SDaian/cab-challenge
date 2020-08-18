@@ -1,0 +1,15 @@
+.container {
+  padding: 40px 30px 40px 60px;
+  .header {
+    border-bottom: 1px solid var(--lightgray);
+    padding-bottom: 15px;
+    .title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+  .wrapper {
+    padding: 40px 0;
+  }
+}
+  

@@ -1,0 +1,13 @@
+.container {
+  .header {
+    grid-template-columns: 5fr 2fr 2fr 1fr;
+    grid-gap: 10px;
+    display: grid;
+    margin-bottom: 25px;
+    .title {
+      text-transform: uppercase;
+      color: var(--lightgray);
+      font-size: 12px;
+    }
+  }
+}

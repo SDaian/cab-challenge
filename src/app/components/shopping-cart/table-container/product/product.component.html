@@ -1,0 +1,20 @@
+<div class="body">
+  <div class="product-details">
+    <app-image [src]="product.image"></app-image>
+    <div class="info">
+      <span class="title">{{product.name}}</span>
+      <span class="code">Product code {{product.code}}</span>
+    </div>
+  </div>
+  <div class="product-count">
+    <span class="operators" (click)="substract()">-</span>
+    <input type="number" [formControl]="quantity" (keypress)="numberOnly($event)">
+    <span class="operators" (click)="add()">+</span>
+  </div>
+  <div class="unit-price">
+    <span>{{product.price}} €</span>
+  </div>
+  <div class="total-price">
+    <span>{{calculateTotal()}} €</span>
+  </div>
+</div>

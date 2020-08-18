@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Google Font*/
+  background: #FBFBFB;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: url('/assets/img_background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body::after { background-color: #212240; content: ""; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -1; opacity: 0.8; } 
+
+:root {
+  --lightgray: #e3e3e3;
+  --gray-1: #BABAC3;
+  --black-1: #000000;
+  --violet-1: #7350FF;
+  --violet-2: #7855BB;
+}

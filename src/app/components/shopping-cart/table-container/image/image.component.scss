@@ -1,0 +1,13 @@
+.image-container {
+  border: 1px solid var(--lightgray);
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+

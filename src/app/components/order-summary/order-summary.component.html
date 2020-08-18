@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="header">
+      <span class="title">Order Summary</span>
+    </div>
+    <ng-container *ngIf="orderSummary$|async as orderSummary">
+      <div class="detail">
+        <div class="total-items">
+          
+            <span>{{sumItems(orderSummary.length)}}</span>
+            <span class="total">{{calculateTotal(orderSummary)}} €</span>
+        </div>
+      </div>
+      <div class="discounts">
+        <span class="title">DISCOUNTS</span>
+        <div class="discounts-detail mug" *ngIf="checkForMugDiscount('MUG', orderSummary)">
+          <span>2x1 Mug Offer</span>
+          <span>-{{calculateDiscount('MUG', orderSummary)}} €</span>
+        </div>
+        <div class="discounts-detail shirt" *ngIf="checkForShirtDiscount('SHIRT', orderSummary)">
+          <span>x3 Shirt Offer</span>
+          <span>-{{calculateDiscount('SHIRT', orderSummary)}} €</span>
+        </div>
+      </div>
+    
+    <div class="checkout-container">
+      <div class="checkout">
+        <span class="total-cost">TOTAL COST</span> 
+        <span class="price">{{calculateTotalWithDiscounts(orderSummary)}} €</span>
+      </div>
+      <div class="button">
+        <span>Checkout</span>
+      </div>
+    </div>
+  </ng-container>
+  </div>
+</div>

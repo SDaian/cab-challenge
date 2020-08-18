@@ -1,0 +1,23 @@
+[
+  {
+    "code": "X792OPX",
+    "name": "Cabify T-Shirt",
+    "price": 20.00,
+    "image": "shirt.png",
+    "internalCode": "SHIRT"
+  },
+  {
+    "code": "X2OG2OZ",
+    "name": "Cabify Coffe Mug",
+    "price": 5.00,
+    "image": "mug.png",
+    "internalCode": "MUG"
+  },
+  {
+    "code": "X3W2OPY",
+    "name": "Cabify Cap",
+    "price": 10.00,
+    "image": "cap.png",
+    "internalCode": "CAP"
+  }
+]

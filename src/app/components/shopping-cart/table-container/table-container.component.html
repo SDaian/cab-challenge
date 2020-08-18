@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="header">
+    <span class="title">Product Details</span>
+    <span class="title">Quantity</span>
+    <span class="title">Price</span>
+    <span class="title">Total</span>
+  </div>
+
+    <ng-container *ngFor="let item of (products$|async); index as i">
+      <app-product 
+        [product]="item" 
+        (removeFromCart)="removeProductFromOrder($event)" 
+        (addToCart)="addProductToOrder($event)"></app-product>
+    </ng-container>
+    
+</div>
